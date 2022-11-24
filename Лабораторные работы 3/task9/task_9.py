@@ -12,3 +12,4 @@ for i in range(months):
     months -= 1
     i += 1
 print(round(money_capital))
+
