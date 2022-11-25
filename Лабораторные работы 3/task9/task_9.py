@@ -9,7 +9,6 @@ for i in range(months):
     delta = spend - salary
     money_capital += delta
     spend *= (1 + increase)
-    months -= 1
     i += 1
 print(round(money_capital))
 
