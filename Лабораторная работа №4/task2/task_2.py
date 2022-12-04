@@ -1,11 +1,9 @@
 def get_count_char(str_):
     dict = {}
-    list_letter_str_ = []
-    for letter in str_.lower():
-        list_letter_str_.append(letter)
-    for letter in str_.lower():
+    low_str = str_.lower()
+    for letter in low_str:
         if letter.isalpha() == True:
-            dict[letter] = str_.lower().count(letter)
+            dict[letter] = low_str.count(letter)
     return dict
 
 main_str = """
