@@ -2,7 +2,7 @@ def get_count_char(str_):
     dict = {}
     low_str = str_.lower()
     for letter in low_str:
-        if letter.isalpha() == True:
+        if letter.isalpha():
             dict[letter] = low_str.count(letter)
     return dict
 
