@@ -1,5 +1,5 @@
 def delete(list_, index=None):
-        if index != None and index >= 0:
+    if index != None and index >= 0:
         list_ = list_[:index] + list_[index+1:]
     elif index != None and index < 0:
         list_ = list_[:index-1] + list_[index:]
