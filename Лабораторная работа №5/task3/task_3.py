@@ -1,5 +1,7 @@
+from random import randint
+
+
 def get_unique_list_numbers(a) -> list[int]:
-    from random import randint
     return [randint(-10, 10) for _ in range(a)]
 
 
