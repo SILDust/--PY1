@@ -1,11 +1,10 @@
-import random
-import string
+from random import sample
+from string import ascii_uppercase, ascii_lowercase, digits
 
 
-def get_random_password(n) -> str:
-    all_list = [letter for letter in (string.ascii_lowercase + string.ascii_uppercase)] + \
-               [str(digit) for digit in range(10)]
-    password_list = random.sample(all_list, n)
+def get_random_password(n=8) -> str:
+    all_list = ascii_lowercase + ascii_uppercase + digits
+    password_list = sample(all_list, n)
     return "".join(password_list)
 
 
