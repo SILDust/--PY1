@@ -1,8 +1,8 @@
 from random import sample
 
 
-def get_unique_list_numbers(a, b, c) -> list[int]:
-    return [i for i in sample(range(b, c+1), a)]
+ef get_unique_list_numbers(quantity, low_threshold, upper_threshold) -> list[int]:
+    return [i for i in sample(range(low_threshold, upper_threshold+1), quantity)]
 
 
 list_unique_numbers = get_unique_list_numbers(15, -10, 10)
